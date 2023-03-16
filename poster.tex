@@ -1,0 +1,102 @@
+
+\documentclass[final]{beamer}
+
+\input{Config/include.tex}
+\input{Config/page_setup.tex}
+
+\begin{document}
+
+
+\addtobeamertemplate{headline}{}
+{
+	\begin{tikzpicture}[remember picture,overlay]
+		\node [anchor=north west, inner sep=3cm] at ([xshift=-2.5cm,yshift=2.75cm]current page.north west)
+		{\includegraphics[height=4.5cm]{logos/unott-logo.eps}};
+	\end{tikzpicture}
+}
+
+\begin{frame}[t]
+	\begin{columns}[t]
+		\separatorcolumn
+
+		\begin{column}{\colwidth}
+
+			\begin{block}{Economic and Social Context}
+				\input{Src/1_Context.tex}
+			\end{block}
+
+			\begin{block}{Energy Consumption in Tanzania}
+				\input{Src/2_Consumption.tex}
+			\end{block}
+
+			\begin{block}{Renewable Energy Review}
+				\input{Src/3_renewables.tex}
+			\end{block}
+
+		\end{column}
+
+		\separatorcolumn
+z
+		\begin{column}{\colwidth}
+
+			Hydropower accounts for about 1/3rd of electricity generation. Tanzania has very humid and mountainous regions, giving it a high hydropower potential of 4.7 GW. only 562MW of this is currently being exploited. The country plans to develop this potential in the future but considers a weak transition infrastructure the current limiting factor \cite{S2}.
+
+      \vspace*{0.5cm}
+
+	  Tanzania currently has a primarily unexploited high pv potential. The country is near the equator and has a high pv potential of 5.5 kWh/m2/day. Despite this, photovoltaic systems only account for 51GWh of electricity annually. However, The use of solar power in the country is growing exponentially as a short-term solution to the lack of grid infrastructure \cite{Aly2017Dec}.
+
+			\vspace{0.5cm}
+
+			Given its poor economic status, why would a country like Tanzania be interested in renewable energy? A significant advantage of renewable is that they are cheap for small-scale isolated systems, which are prevalent due to the lack of infrastructure in the country. Where the industrial and transport sectors are underdeveloped, most electricity consumption comes from the residential sectors. While there are a handful of major cities, the majority of the population lives in rural areas and rely on are required to generate their power.
+
+      \vspace*{0.5cm}
+
+      
+
+
+			\begin{block}{Photo-voltaic systems in Tanzania}
+				\input{Src/4_Review.tex}
+			\end{block}
+
+
+			\begin{block}{Anylisis of technology and economic viability}
+				\input{Src/6_anylisis.tex}
+			\end{block}
+
+		\end{column}
+
+		\separatorcolumn
+
+		\begin{column}{\colwidth}
+
+            Solar panels supply energy for low-powered consumer electronics; however, the electrical demand will also increase as the economy grows. Unfortunately, it is challenging to scale solar power to meet this requirement. Where a Grid is required to meet the energy demand, other energy sources can mass-generate electricity at a much lower cost. Although they will help modernise the country in the short term, it is not a scalable solution. 
+      % \vspace*{0.5cm}
+
+			\begin{block}{The Future of PV systems in Tanzania}
+				\input{Src/7_roadmaps.tex}
+			\end{block}
+
+			\begin{block}{Conclusion}
+				\input{Src/8_conclusion.tex}
+			\end{block}
+
+			\begin{block}{References}
+				  \nocite{*}
+				  \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+		\end{block}
+
+		\end{column}
+
+		\separatorcolumn
+	\end{columns}
+\end{frame}
+
+\end{document}
+
+
+
+
+
+
+
+
